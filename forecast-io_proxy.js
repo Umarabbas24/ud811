@@ -47,7 +47,7 @@ function handleRequest(request, response) {
       var forecast = JSON.parse(freshForecast);
       forecast.expiresAt = Date.now() + (1000 * 60);
       cachedForecasts[cityName] = forecast; 
-      console.log('RESP ', cityName, '[network]');     
+      console.log('RESP ', cityHarar, '[network]');     
     });
   }
 }
